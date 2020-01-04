@@ -57,7 +57,9 @@
 
     <modules>
         <module>boot-demo</module>
+        <module>boot-mybatis</module>
         <module>boot-mybatis-annotate</module>
         <module>boot-mybatis-plus</module>
+        <module>boot-redis-token</module>
     </modules>
 </project>

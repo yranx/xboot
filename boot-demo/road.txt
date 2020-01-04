@@ -1,0 +1,64 @@
+1.springboot使用WebJars结合前端
+    引入webjars，以jar包的形式加入项目
+    no.1 pom.xml中引入 <!-- 引用bootstrap -->
+              		<dependency>
+              			<groupId>org.webjars</groupId>
+              			<artifactId>bootstrap</artifactId>
+              			<version>3.3.7-1</version>
+              		</dependency>
+
+              		<!-- 引用jquery -->
+              		<dependency>
+              			<groupId>org.webjars</groupId>
+              			<artifactId>jquery</artifactId>
+              			<version>3.1.1</version>
+              		</dependency>
+    no.2 在src/main/resources/static文件下新建index.html,引用
+
+2.SpringBoot的国际化使用
+https://www.dalaoyang.cn/article/10
+    no.1加入了nekohtml去掉html严格校验
+    <!--去除html严格校验-->
+		<dependency>
+			<groupId>net.sourceforge.nekohtml</groupId>
+			<artifactId>nekohtml</artifactId>
+			<version>1.9.15</version>
+		</dependency>
+	no.2配置
+        ##去除thymeleaf的html严格校验
+        spring.thymeleaf.mode=LEGACYHTML5
+    no.3 配置文件：在resources里面新建messages.properties（默认配置），messages_en_US.properties（英文），messages_zh_CN.properties（中文）
+    no.4 在templates下新建chinaEng.html
+    no.5 创建国际化配置文件，I18Config.java   IndexController.java--hello
+
+3.邮件
+    no.1 pom.xml
+            <dependency>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-starter-mail</artifactId>
+            </dependency>
+    no.2 配置文件
+    no.3 MailController.java
+
+
+3.Swagger
+    no.1 pom.xml
+            <dependency>
+                <groupId>io.springfox</groupId>
+                <artifactId>springfox-swagger2</artifactId>
+                <version>2.7.0</version>
+            </dependency>
+            <dependency>
+                <groupId>io.springfox</groupId>
+                <artifactId>springfox-swagger-ui</artifactId>
+                <version>2.7.0</version>
+            </dependency>
+    no.2 SwaggerConfiguration
+    no.3 http://127.0.0.1:8081/xboot/swagger-ui.html
+
+
+x.几个数据源配置啥的以后用到再去了解
+https://www.dalaoyang.cn/article/11
+https://www.dalaoyang.cn/article/25
+https://www.dalaoyang.cn/article/26
+https://www.dalaoyang.cn/article/53

@@ -11,6 +11,7 @@ import org.springframework.web.bind.annotation.RestController;
  * @create 2018-03-23 13:05
  **/
 @RestController
+@RequestMapping("/index")
 public class RedisController {
 
     /**

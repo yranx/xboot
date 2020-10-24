@@ -14,6 +14,7 @@ import javax.servlet.http.HttpServletRequest;
  * @create 2018-03-22 10:43
  **/
 @RestController
+@RequestMapping("/index")
 public class UserIpController {
     @RequestMapping("/getIp")
     @ResponseBody

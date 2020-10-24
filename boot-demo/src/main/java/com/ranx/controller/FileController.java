@@ -24,7 +24,7 @@ import java.util.List;
 public class FileController {
     private static final Logger log = LoggerFactory.getLogger(FileController.class);
 
-    private final String FILEPATH =  "E:\\IdeaProjects\\file";
+    private final String FILEPATH =  "F:\\Temp\\file";
 
     @RequestMapping(value = "/upload")
     public String upload(@RequestParam("file")MultipartFile file) {
@@ -46,7 +46,7 @@ public class FileController {
 
             //文件写入
             file.transferTo(dest);
-            return "上传成功";
+            return "/success";
         } catch (IOException e) {
             e.printStackTrace();
         }
@@ -58,7 +58,7 @@ public class FileController {
         List<MultipartFile> files = ((MultipartHttpServletRequest) request).getFiles("file");
         MultipartFile file = null;
         BufferedOutputStream stream = null;
-        for (int i=1; i<files.size()+1; i++) {
+        for (int i=0; i<files.size(); i++) {
             file = files.get(i);
             if (!file.isEmpty()) {
                 try {
@@ -76,7 +76,7 @@ public class FileController {
                 return "第" + i + "个文件上传失败,因为文件为空";
             }
         }
-        return "上传成功";
+        return "/success";
     }
 
     @GetMapping("/download")
@@ -102,7 +102,7 @@ public class FileController {
                         os.write(buffer, 0, i);
                         i = bis.read(buffer);
                     }
-                    return "下载成功";
+                    return "/success";
                 } catch (Exception e) {
                     e.printStackTrace();
                 } finally {

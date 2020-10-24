@@ -35,6 +35,7 @@ public class UserLoginController {
     public Result hello() {
         return new Result(200,"success", "hello token");
     }
+
     @RequestMapping(value = "/login", method = RequestMethod.POST)
     public Result login(@RequestBody(required = false)JSONObject userInfo) {
         String username = userInfo.getString("username");

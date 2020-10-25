@@ -5,6 +5,7 @@ import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.PropertySource;
 
 /**
+ * 资源文件映射实体
  * @author ranx
  * @create 2018-04-07 18:09
  **/

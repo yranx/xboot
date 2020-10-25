@@ -6,6 +6,7 @@ boot-demo| springboot相关不需数据库参与 | FileController | /index/fileO
  |  |  | IndexController | http://127.0.0.1:8081/xboot/# | 主页
  |  |  |MailController |  | 
  |  |  |RedisController | /index/redisHandler | Redis
+  |  |  |UserController | /user/getUserJSON | json对象的构建-jackson
  |  |  |UserIpController | /index/getIp | 
 boot-mybatis| xml版                    | ExcelController  |  http://127.0.0.1:8085/xboot/index/exportExcel |  数据表格导出
 boot-mybatis-annotate| 注解版          | UserController   |  http://127.0.0.1:8080/user/getUsersByAge?age=27 | 

@@ -3,10 +3,10 @@
 pojName | information | interface | url | info
 -------| -----| -----|-----|-----|
 boot-demo| springboot相关不需数据库参与 | FileController | /index/fileOper  | 文件上传下载
-         |                             | IndexController | http://127.0.0.1:8081/xboot/# | 主页
-         |                             | MailController |  | 
-         |                             | RedisController | /index/redisHandler | Redis
-         |                             | UserIpController | /index/getIp | 
+ |  |  IndexController | http://127.0.0.1:8081/xboot/# | 主页
+ |  | MailController |  | 
+ |  | RedisController | /index/redisHandler | Redis
+ |  | UserIpController | /index/getIp | 
 boot-mybatis| xml版                    | ExcelController  |  http://127.0.0.1:8085/xboot/index/exportExcel |  数据表格导出
 boot-mybatis-annotate| 注解版          | UserController   |  http://127.0.0.1:8080/user/getUsersByAge?age=27 | 
 boot-mybatis-plus| Mybatis-Plus 搭建与使用入门| TSysUserController  |  http://127.0.0.1:8083/tSysUser/testSelect | 

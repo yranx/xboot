@@ -27,7 +27,7 @@ public class ThymeleafController {
         return "thymeleaf/center/center";
     }
 
-    @RequestMapping("/test")
+    @RequestMapping("/thel")
     public String test(ModelMap map) {
         User u = new User();
         u.setName("superadmin");
@@ -57,7 +57,7 @@ public class ThymeleafController {
 
         map.addAttribute("userList", userList);
 
-        return "thymeleaf/test";
+        return "thymeleaf/thEl";
     }
 
     @RequestMapping("/postform")
@@ -65,12 +65,8 @@ public class ThymeleafController {
         System.out.println("姓名：" + u.getName());
         System.out.println("年龄：" + u.getAge());
 
-        return "redirect:/th/test";
+        return "redirect:/th/thel";
     }
 
-    @RequestMapping("/showerror")
-    public String showerror(User u) {
-        int a = 1/ 0;
-        return "redirect:/th/test";
-    }
+
 }

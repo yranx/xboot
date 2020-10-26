@@ -3,6 +3,7 @@
 pojName | information | interface | url | info
 -------| -----| -----|-----|-----|
 boot-demo| springboot相关不需数据库参与 | FileController | /index/fileOper  | 文件上传下载
+ |  |  |FreemarkerController | /ftl/index | Freemarker
  |  |  | IndexController | http://127.0.0.1:8081/xboot/# | 主页
  |  |  |MailController |  | 
  |  |  |RedisController | /index/redisHandler | Redis

@@ -20,7 +20,7 @@ import java.util.List;
  * @create 2018-03-23 13:05
  **/
 @RestController
-@RequestMapping("/index")
+@RequestMapping("/redis")
 public class RedisController {
 
     @Autowired

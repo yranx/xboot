@@ -62,3 +62,8 @@ https://www.dalaoyang.cn/article/11
 https://www.dalaoyang.cn/article/25
 https://www.dalaoyang.cn/article/26
 https://www.dalaoyang.cn/article/53
+
+4.拦截器
+使用注解 @Configuration 配置拦截器
+继承WebMvcConfigurerAdapter
+重写addInterceptors添加需要的拦截器地址
